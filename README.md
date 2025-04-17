@@ -7,7 +7,7 @@ Welcome to the **Easter Egg Finder** project! This is a fun web page where users
 ## Demo
 
 You can view the live demo of the project here:  
-[Live Demo](https://your-github-username.github.io/easter-egg-finder)
+[Live Demo]([https://your-github-username.github.io/easter-egg-finder](https://github.com/lakshmi409/easter-egg-finder/tree/main?tab=readme-ov-file))
 
 ## Features
 
