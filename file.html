@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easter Egg Finder</title>
+  
+  <!-- CSS Styling - Internal Style -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #4CAF50;
+      margin-top: 20px;
+    }
+
+    .egg {
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .egg:hover {
+      opacity: 0.7;
+    }
+
+    .hidden-message {
+      display: none;
+      color: #fff;
+      background-color: #000;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .content {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .essay {
+      text-align: left;
+      line-height: 1.6;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <h1>Find the Easter <span class="egg" id="eggText">egg</span>!</h1>
+
+
+  <!-- Hidden Message -->
+  <div class="hidden-message" id="hiddenMessage">
+    <p>Congratulations! You found the Easter Egg!</p>
+  </div>
+
+  <!-- Essay Section -->
+  <div class="content">
+    <h2>The Fascinating World of Easter Eggs</h2>
+    <div class="essay">
+      <p><strong>Introduction</strong></p>
+      <p>Easter eggs have captured the imaginations of people for centuries. The term, however, has evolved in meaning, initially referring to the decorated eggs exchanged during Easter celebrations and later extending to hidden surprises in movies, video games, software, and even websites. Regardless of the context, the concept of an Easter egg remains one of discovery, fun, and hidden secrets waiting to be uncovered. Let's explore the fascinating world of Easter eggs — from the traditional to the digital.</p>
+      
+      <p><strong>The Traditional Easter Egg</strong></p>
+      <p>The Easter egg as we know it today has roots in ancient cultures, where eggs were symbolic of fertility, rebirth, and new life. In the Christian tradition, eggs came to symbolize the resurrection of Jesus Christ, particularly around the time of Easter, which celebrates his resurrection. Over time, it became a custom to decorate eggs with vibrant colors and intricate designs, often as a way to mark the joy of the holiday.</p>
+      
+      <p>In many cultures, Easter eggs were not only painted but also hidden for children to find during the Easter egg hunt — a fun tradition that has become a staple in Easter celebrations worldwide. The Easter egg hunt is a playful activity that encourages exploration and excitement, as children search high and low to find these hidden treasures. The excitement of discovering a hidden egg mirrors the joy and surprise of uncovering something unexpected.</p>
+
+
+      <p><strong>The Fun of Discovery</strong></p>
+      <p>The thrill of discovering an Easter egg, whether it’s in the form of a hidden message, a secret game level, or a fun reference in a movie, adds an element of excitement and engagement. These surprises are often designed to reward the keen observer, the gamer who takes time to explore, or the moviegoer who notices the small details that others may miss. Easter eggs encourage people to pay attention to the details, to be curious, and to embrace the joy of discovery.</p>
+
+      
+    </div>
+  </div>
+
+  <!-- JavaScript - Internal Script -->
+  <script>
+    // JavaScript functionality to replace "egg" text with an image on click
+    document.getElementById("eggText").addEventListener("click", function() {
+      // Replace the word "egg" with an image
+      this.innerHTML = '<img src="easteregg.png" alt="Easter Egg" width="50px" height="50px">';
+      
+      // Show the hidden message
+      document.getElementById("hiddenMessage").style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
